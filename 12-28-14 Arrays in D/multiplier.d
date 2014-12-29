@@ -78,11 +78,10 @@ void printMessage(double factor, double multiplier, double product)
 
 bool shouldSort()
 {
-    int input;
+    string input;
 
-    writeln("Sort the factors list?");
-    write("1 = yes, 0 = no: ");
-    readf(" %s", &input);
+    write("Sort the factors list? [y/n]: ");
+    readf(" %s\n", &input);
 
-    return input == 1;
+    return input == "y";
 }
